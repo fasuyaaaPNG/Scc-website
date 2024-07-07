@@ -1,0 +1,70 @@
+.home {
+  /* border: 1px solid red; */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  width: 85vw;
+  margin-left: 4vw;
+  margin-top: 5vh;
+}
+
+.navigasiNavbar {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  gap: 2.4vw;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: #272727;
+}
+
+.logoScc {
+  width: 4vw;
+}
+
+.deskripsi {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.2vw;
+  font-size: 5.5vw;
+  width: 50vw;
+  margin-left: 4vw;
+  margin-top: 5vh;
+  line-height: 6.3vw;
+  height: 18vw;
+  color: #272727;
+  position: relative;
+}
+
+.andFont {
+  font-family: "Charmonman", cursive;
+  color: #0c4651;
+}
+
+.foto1 {
+  width: 73vw;
+  margin-left: 4vw;
+  margin-top: 7.8vh
+}
+
+.asset1 {
+  width: 50vw;
+  position: relative;
+  bottom: 25vh;
+  left: 39.5vw;
+  z-index: -2;
+}
+
+.nextButton {
+  width: 3.5vw;
+  position: relative;
+  bottom: 33vw;
+  left: 35vw;
+}
