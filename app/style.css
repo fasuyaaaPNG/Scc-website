@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .home {
   /* border: 1px solid red; */
   height: 100vh;
@@ -67,4 +71,120 @@
   position: relative;
   bottom: 33vw;
   left: 35vw;
+}
+
+.nextButton:hover {
+  cursor: pointer;
+}
+
+.tentang {
+  height: 100vh;
+  background-color: #181A1E;
+  overflow: hidden;
+}
+
+.refAbout {
+  /* border: 1px solid red; */
+  position: absolute;
+  margin-top: 25vw;
+  margin-left: 50vw;
+}
+
+.garis {
+  height: 100vh;
+  background-color: #183237;
+  opacity: 0.5;
+  width: 0.2vw;
+  margin-left: 37vw;
+  position: relative;
+  bottom: 50vw;
+}
+
+.judulTentang {
+  /* border: 1px solid red; */
+  color: #F5F5F5;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  margin-left: 5vw;
+  letter-spacing: 0.2vw;
+}
+
+.judulPanah {
+  position: absolute;
+  margin-top: 7vw;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+.deskripsiTentang {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vw;
+  width: 29vw;
+  position: absolute;
+  margin-top: 34vw;
+  margin-left: 4.5vw;
+  line-height: 1.9vw;
+  color: #C7C7C7;
+}
+
+.panah {
+  width: 1vw;
+  height: 1vw;
+}
+
+.boldPutih {
+  color: #F5F5F5;
+  font-weight: 500;
+}
+
+.teks1Kanan {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2.7vw;
+  color: #C7C7C7;
+  letter-spacing: -0.1vw;
+  width: 55vw;
+  margin-left: 43vw;
+  margin-top: 7vw;
+  line-height: 3.8vw;
+}
+
+.teks2Kanan {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.1vw;
+  font-weight: 300;
+  font-size: 2.7vw;
+  color: #C7C7C7;
+  width: 55vw;
+  margin-left: 43vw;
+  margin-top: 21vw;
+  line-height: 3.8vw;
+}
+
+.navLebihLanjut {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 43vw;
+  margin-top: 38vw;
+}
+
+.borderLebihLanjut {
+  border-radius: 2vw;
+  border: 0.2vw solid #0C4651;
+}
+
+.lebihLanjut {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: #F5F5F5;
+}
+
+.panahBawah {
+  width: 3.6vw;
 }
