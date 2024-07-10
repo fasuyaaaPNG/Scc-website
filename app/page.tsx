@@ -99,7 +99,7 @@ export default function Home() {
           delay: 0.5
         }}
       >
-        Berbagi ilmu <span className="andFont">&</span><br />berkolaborasi dalam teknologi
+        Berbagi ilmu dan berkolaborasi dalam teknologi
       </motion.p>
       <motion.img 
         src="/assets/foto1.png" draggable="false" alt="" className="foto1" 
@@ -183,7 +183,7 @@ export default function Home() {
           ease: "easeIn"
         }}
       >
-        <span className="boldPutih">Stemba Computer Club (SCC)</span>  adalah komunitas komputer di SMK Negeri 7 Semarang 
+        <span className="boldPutih">Stemba Computer Club (SCC)</span>  adalah<br /> komunitas komputer di SMK Negeri 7 Semarang 
       </motion.p>
       <motion.p className="teks2Kanan"
         initial={{
@@ -198,7 +198,7 @@ export default function Home() {
           ease: "easeIn"
         }}
       >
-        Wadah bagi siswa untuk <span className="boldPutih">belajar, berkolaborasi,</span> dan <span className="boldPutih">mengembangkan</span> keterampilan teknologi komputer 
+        Wadah bagi siswa untuk <span className="boldPutih">belajar, berkolaborasi,<br /></span> dan <span className="boldPutih">mengembangkan</span> keterampilan teknologi komputer 
       </motion.p>
       <motion.a href="" className="navLebihLanjut"
         onMouseEnter={() => setHoveredLebihLanjut(true)}
@@ -238,7 +238,7 @@ export default function Home() {
             rotate: "-90deg"
           }}
           animate={{
-            x: isHoveredLebihLanjut? "-16.9vw" : 0,
+            x: isHoveredLebihLanjut? "-17.8vw" : 0,
             rotate: isHoveredLebihLanjut? "-90deg" : 0
           }}
           transition={{

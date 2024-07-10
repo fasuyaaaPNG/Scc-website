@@ -4,7 +4,7 @@ html {
 
 .home {
   /* border: 1px solid red; */
-  height: 100vh;
+  height: 56.223vw;
   overflow: hidden;
 }
 
@@ -13,38 +13,38 @@ html {
   align-items: center;
   /* border: 1px solid red; */
   justify-content: space-between;
-  width: 85vw;
-  margin-left: 4vw;
-  margin-top: 5vh;
+  width: 87.701vw;
+  margin-left: 4.685vw;
+  margin-top: 2.196vw;
 }
 
 .navigasiNavbar {
   display: flex;
   align-items: center;
   /* border: 1px solid red; */
-  gap: 2.4vw;
+  gap: 3.001vw;
   font-family: "Manrope", sans-serif;
   font-weight: 500;
-  font-size: 1.2vw;
+  font-size: 1.318vw;
   color: #272727;
 }
 
 .logoScc {
-  width: 4vw;
+  width: 4.758vw;
 }
 
 .deskripsi {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
-  letter-spacing: -0.2vw;
-  font-size: 5.5vw;
-  width: 50vw;
+  letter-spacing: -0.3vw;
+  font-size: 5.857vw;
+  width: 79.356vw;
   margin-left: 4vw;
-  margin-top: 5vh;
-  line-height: 6.3vw;
-  height: 18vw;
+  margin-top: 4.124vw;
+  height: 15.959vw;
   color: #272727;
   position: relative;
+  /* border: 1px solid red; */
 }
 
 .andFont {
@@ -53,24 +53,25 @@ html {
 }
 
 .foto1 {
-  width: 73vw;
+  width: 76.72vw;
+  height: 20.059vw;
   margin-left: 4vw;
-  margin-top: 7.8vh
+  margin-top: 4.761vw;
 }
 
 .asset1 {
-  width: 50vw;
+  width: 39.116vw;
   position: relative;
-  bottom: 12.7vw;
-  left: 39.5vw;
+  bottom: 11.7vw;
+  left: 49.8vw;
   z-index: -2;
 }
 
 .nextButton {
-  width: 3.5vw;
+  width: 3.807vw;
   position: relative;
-  bottom: 33vw;
-  left: 35vw;
+  bottom: 24.589vw;
+  left: 48vw;
 }
 
 .nextButton:hover {
@@ -78,7 +79,7 @@ html {
 }
 
 .tentang {
-  height: 100vh;
+  height: 56.223vw;
   background-color: #181A1E;
   overflow: hidden;
 }
@@ -91,11 +92,11 @@ html {
 }
 
 .garis {
-  height: 100vh;
+  height: 56.223vw;
   background-color: #183237;
   opacity: 0.5;
   width: 0.2vw;
-  margin-left: 37vw;
+  margin-left: 35.212vw;
   position: relative;
   bottom: 50vw;
 }
@@ -105,33 +106,33 @@ html {
   color: #F5F5F5;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 1.5vw;
-  margin-left: 5vw;
+  font-size: 1.464vw;
+  margin-left: 4.392vw;
   letter-spacing: 0.2vw;
 }
 
 .judulPanah {
   position: absolute;
-  margin-top: 7vw;
+  margin-top: 7.613vw;
   display: flex;
   align-items: center;
-  gap: 3vw;
+  gap: 1.903vw;
 }
 
 .deskripsiTentang {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2vw;
-  width: 29vw;
+  font-size: 1.171vw;
+  width: 24.744vw;
   position: absolute;
-  margin-top: 34vw;
+  margin-top: 36.237vw;
   margin-left: 4.5vw;
   line-height: 1.9vw;
   color: #C7C7C7;
 }
 
 .panah {
-  width: 1vw;
-  height: 1vw;
+  width: 1.757vw;
+  height: 1.757vw;
 }
 
 .boldPutih {
@@ -141,27 +142,28 @@ html {
 
 .teks1Kanan {
   position: absolute;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 2.7vw;
+  font-family: "Manrope", sans-serif;
+  font-weight: 200;
+  font-size: 2.535vw;
   color: #C7C7C7;
   letter-spacing: -0.1vw;
-  width: 55vw;
-  margin-left: 43vw;
-  margin-top: 7vw;
-  line-height: 3.8vw;
+  /* border: 1px solid red; */
+  width: 55.124vw;
+  margin-left: 42.387vw;
+  margin-top: 6.808vw;
+  line-height: 4.319vw;
 }
 
 .teks2Kanan {
   position: absolute;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Manrope", sans-serif;
   letter-spacing: -0.1vw;
-  font-weight: 300;
-  font-size: 2.7vw;
+  font-weight: 200;
+  font-size: 2.535vw;
   color: #C7C7C7;
-  width: 55vw;
-  margin-left: 43vw;
-  margin-top: 21vw;
+  width: 55.124vw;
+  margin-left: 42.387vw;
+  margin-top: 16.911vw;
   line-height: 3.8vw;
 }
 
@@ -169,8 +171,9 @@ html {
   display: flex;
   align-items: center;
   position: absolute;
-  margin-left: 43vw;
-  margin-top: 38vw;
+  margin-left: 42.533vw;
+  margin-top: 39.531vw;
+  gap: 0.586vw;
 }
 
 .borderLebihLanjut {
