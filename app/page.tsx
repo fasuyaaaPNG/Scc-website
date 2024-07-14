@@ -238,7 +238,7 @@ export default function Home() {
             rotate: "-90deg"
           }}
           animate={{
-            x: isHoveredLebihLanjut? "-17.8vw" : 0,
+            x: isHoveredLebihLanjut? "-17.5vw" : 0,
             rotate: isHoveredLebihLanjut? "-90deg" : 0
           }}
           transition={{

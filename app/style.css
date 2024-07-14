@@ -93,7 +93,7 @@ html {
 
 .garis {
   height: 56.223vw;
-  background-color: #183237;
+  background-color: #424242;
   opacity: 0.5;
   width: 0.2vw;
   margin-left: 35.212vw;
@@ -144,7 +144,7 @@ html {
   position: absolute;
   font-family: "Manrope", sans-serif;
   font-weight: 200;
-  font-size: 2.535vw;
+  font-size: 2.343vw;
   color: #C7C7C7;
   letter-spacing: -0.1vw;
   /* border: 1px solid red; */
@@ -159,12 +159,12 @@ html {
   font-family: "Manrope", sans-serif;
   letter-spacing: -0.1vw;
   font-weight: 200;
-  font-size: 2.535vw;
+  font-size: 2.343vw;
   color: #C7C7C7;
-  width: 55.124vw;
+  width: 50.952vw;
   margin-left: 42.387vw;
   margin-top: 16.911vw;
-  line-height: 3.8vw;
+  line-height: 4.319vw;
 }
 
 .navLebihLanjut {
@@ -178,7 +178,7 @@ html {
 
 .borderLebihLanjut {
   border-radius: 2vw;
-  border: 0.2vw solid #0C4651;
+  border: 0.161vw solid #027FFF;
 }
 
 .lebihLanjut {
