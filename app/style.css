@@ -4,7 +4,7 @@ html {
 
 .home {
   /* border: 1px solid red; */
-  height: 56.223vw;
+  height: 56.120vw;
   overflow: hidden;
 }
 
@@ -79,7 +79,7 @@ html {
 }
 
 .tentang {
-  height: 56.223vw;
+  height: 56.120vw;
   background-color: #181A1E;
   overflow: hidden;
 }
