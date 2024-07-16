@@ -270,7 +270,7 @@ html {
   width: 38.214vw;
   height: 8.203vh;
   border-radius: 0.878vw;
-  transition: transform 0.5s ease, background-color 0.8s ease, height 0.3s ease, width 0.8s ease-in-out;
+  transition: transform 0.5s ease, background-color 0.7s ease, height 0.3s ease, width 0.8s ease-in-out;
 }
 
 .bidangScc:hover {
@@ -306,7 +306,7 @@ html {
   align-items: start;
   height: 32.552vh;
   transform-origin: top;
-  transition: transform 0.8s ease, background-color 1s ease, height 0.3s ease, width 0.5s ease;
+  transition: transform 0.8s ease, background-color 0.7s ease, height 0.3s ease, width 0.5s ease;
   .kategoriCyber {
     display: flex;
     width: 24.158vw;
