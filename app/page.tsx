@@ -7,8 +7,10 @@ import { useInView , motion } from "framer-motion"
 export default function Home() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
+  const secRef = useRef(null);
   const isInViewHome = useInView(homeRef, { once: true });
   const isInViewAbout = useInView(aboutRef, { once: true });
+  const isInViewSec = useInView(secRef, { once: true });
   const [isHoveredLebihLanjut, setHoveredLebihLanjut] = useState(false)
 
   useEffect(() => {
@@ -18,6 +20,10 @@ export default function Home() {
   useEffect(() => {
     console.log("Element is in view About: ", isInViewAbout);
   }, [isInViewAbout]);
+
+  useEffect(() => {
+    console.log("Element is in view About: ", isInViewSec);
+  }, [isInViewSec]);
 
   
   return (
@@ -149,7 +155,7 @@ export default function Home() {
       </a>
     </section>
     <section className="tentang" id="about">
-      <div className="refAbout" ref={aboutRef}></div>
+      <div className="ref" ref={aboutRef}></div>
       <div className="judulPanah">
         <p className="judulTentang">
             TENTANG KAMI
@@ -168,7 +174,7 @@ export default function Home() {
           ease: "easeIn"
         }}
       >
-        SCC mendorong pembelajaran kolaboratif dan berbagi pengetahuan, serta menumbuhkan semangat belajar siswa SMK Negeri 7 Semarang dalam bidang teknologi.
+        Mengembangkan pemahaman dan kemampuan melalui diskusi, kompetisi, dan sharing melalui pengajar
       </motion.p>
       <motion.p className="teks1Kanan"
         initial={{
@@ -198,9 +204,9 @@ export default function Home() {
           ease: "easeIn"
         }}
       >
-        Wadah bagi siswa untuk <span className="boldPutih">belajar, berkolaborasi,<br /></span> dan <span className="boldPutih">mengembangkan</span> keterampilan teknologi komputer 
+        <span className="boldPutih">SCC</span> mendorong pembelajaran <span className="boldPutih">kolaboratif</span> dan  <span className="boldPutih">berbagi pengetahuan</span>, serta menumbuhkan <span className="boldPutih">semangat belajar</span> siswa SMK Negeri 7 Semarang dalam bidang <span className="boldPutih">teknologi</span>
       </motion.p>
-      <motion.a href="" className="navLebihLanjut"
+      <motion.a href="#sec" className="navLebihLanjut"
         onMouseEnter={() => setHoveredLebihLanjut(true)}
         onMouseLeave={() => setHoveredLebihLanjut(false)}
       >
@@ -238,7 +244,7 @@ export default function Home() {
             rotate: "-90deg"
           }}
           animate={{
-            x: isHoveredLebihLanjut? "-17.5vw" : 0,
+            x: isHoveredLebihLanjut? "-15vw" : 0,
             rotate: isHoveredLebihLanjut? "-90deg" : 0
           }}
           transition={{
@@ -247,19 +253,70 @@ export default function Home() {
           }}
         />
       </motion.a>
-      <motion.div className="garis"
-        animate={{
-          y: isInViewAbout? "50vw" : 0
-        }}
-        transition={{
-          duration: 1,
-          ease: "easeIn"
-        }}
-      ></motion.div>
+      <div className="blueDiv"></div>
     </section>
-    {/* <section className="tentang" id="about" ref={aboutRefa}>
-        
-    </section> */}
+    <section className="bidang" id="sec">
+      <div className="ref" ref={secRef}></div>
+      <div className="judulBidang">
+        <p className="judulBidangTeks">
+          BIDANG SCC
+        </p>
+        <img src="/assets/panahBidang.png" alt="" className="judulBidangPanah" />
+      </div>
+      <p className="deskripsiBidang">
+        Di Stemba Computer Club (SCC), siswa akan mempelajari empat bidang utama: Programming, Cyber Security, Networking, dan UI/UX (User Interface & User Experience)
+      </p>
+      <div className="buttonBidang">
+        <div className="bidangProgramming">
+          <div className="kotakBidang">
+            <div className="nomorBidang">
+              <p className="isiNomorBidang">
+                1
+              </p>
+            </div>
+            <p className="namaBidang">
+              Programming
+            </p>
+          </div>
+        </div>
+        <div className="bidangProgramming">
+          <div className="kotakBidang">
+            <div className="nomorBidang">
+              <p className="isiNomorBidang">
+                2
+              </p>
+            </div>
+            <p className="namaBidang">
+              Cyber security
+            </p>
+          </div>
+        </div>
+        <div className="bidangProgramming">
+          <div className="kotakBidang">
+            <div className="nomorBidang">
+              <p className="isiNomorBidang">
+                3
+              </p>
+            </div>
+            <p className="namaBidang">
+              Networking
+            </p>
+          </div>
+        </div>
+        <div className="bidangProgramming">
+          <div className="kotakBidang">
+            <div className="nomorBidang">
+              <p className="isiNomorBidang">
+                4
+              </p>
+            </div>
+            <p className="namaBidang">
+              ui / ux
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     </>
   );
 }

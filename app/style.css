@@ -4,7 +4,7 @@ html {
 
 .home {
   /* border: 1px solid red; */
-  height: 56.120vw;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -79,26 +79,17 @@ html {
 }
 
 .tentang {
-  height: 56.120vw;
+  height: 100vh;
+  
   background-color: #181A1E;
   overflow: hidden;
 }
 
-.refAbout {
+.ref {
   /* border: 1px solid red; */
   position: absolute;
   margin-top: 25vw;
   margin-left: 50vw;
-}
-
-.garis {
-  height: 56.223vw;
-  background-color: #424242;
-  opacity: 0.5;
-  width: 0.2vw;
-  margin-left: 35.212vw;
-  position: relative;
-  bottom: 50vw;
 }
 
 .judulTentang {
@@ -113,19 +104,19 @@ html {
 
 .judulPanah {
   position: absolute;
-  margin-top: 7.613vw;
+  margin-top: 13.542vh;
   display: flex;
   align-items: center;
   gap: 1.903vw;
 }
 
 .deskripsiTentang {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.171vw;
   width: 24.744vw;
   position: absolute;
-  margin-top: 36.237vw;
-  margin-left: 4.5vw;
+  margin-top: 63.802vh;
+  margin-left: 4.392vw;
   line-height: 1.9vw;
   color: #C7C7C7;
 }
@@ -148,10 +139,10 @@ html {
   color: #C7C7C7;
   letter-spacing: -0.1vw;
   /* border: 1px solid red; */
-  width: 55.124vw;
-  margin-left: 42.387vw;
-  margin-top: 6.808vw;
-  line-height: 4.319vw;
+  width: 53.294vw;
+  margin-left: 40.19vw;
+  margin-top: 11.979vh;
+  line-height: 7.682vh;
 }
 
 .teks2Kanan {
@@ -161,33 +152,138 @@ html {
   font-weight: 200;
   font-size: 2.343vw;
   color: #C7C7C7;
-  width: 50.952vw;
-  margin-left: 42.387vw;
-  margin-top: 16.911vw;
-  line-height: 4.319vw;
+  width: 56.589vw;
+  margin-left: 40.19vw;
+  margin-top: 29.167vh;
+  line-height: 7.682vh;
 }
 
 .navLebihLanjut {
   display: flex;
   align-items: center;
   position: absolute;
-  margin-left: 42.533vw;
-  margin-top: 39.531vw;
+  margin-left: 40.19vw;
+  margin-top: 63.802vh;
   gap: 0.586vw;
 }
 
 .borderLebihLanjut {
-  border-radius: 2vw;
-  border: 0.161vw solid #027FFF;
+  border-radius: 3.66vw;
+  height: 3.88vw;
+  border: 0.161vw solid #F5F5F5;
 }
 
 .lebihLanjut {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: 1.171vw;
+  position: relative;
+  top: 0.3vw;
   color: #F5F5F5;
 }
 
 .panahBawah {
-  width: 3.6vw;
+  width: 3.88vw;
+  height: 3.88vw;
+}
+
+.blueDiv {
+  position: absolute;
+  background-color: #3789DE;
+  height: 13.281vh;
+  width: 100vw;
+  margin-top: 86.719vh;
+}
+
+.bidang {
+  height: 100vh;
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+
+.judulBidang {
+  display: flex;
+  align-items: center;
+  margin-top: 13.542vh;
+  margin-left: 4.319vw;
+  width: 16.984vw;
+  gap: 1.903vw;
+  position: absolute;
+}
+
+.judulBidangTeks {
+  font-size: 1.464vw;
+  width: 13.25vw;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.2vw;
+  color: #272727;
+}
+
+.judulBidangPanah {
+  width: 1.757vw;
+}
+
+.deskripsiBidang {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.171vw;
+  width: 46.266vw;
+  line-height: 3.825vh;
+  margin-left: 49.341vw;
+  margin-top: 14.323vh;
+  position: absolute;
+  letter-spacing: -0.02em;
+  text-align: justify;
+}
+
+.buttonBidang {
+  position: relative;
+  margin-left: 5.271vw;
+  margin-top: 22.526vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4.167vh;
+}
+
+.nomorBidang {
+  border-radius: 100%;
+  width: 2.928vw;
+  height: 2.928vw;
+  background-color: #3789DE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.isiNomorBidang {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.464vw;
+}
+
+.bidangProgramming {
+  border: 0.073vw solid #C7C7C7;
+  display: flex;
+  align-items: center;
+  width: 38.214vw;
+  height: 8.203vh;
+  border-radius: 0.878vw;
+}
+
+.namaBidang {
+  letter-spacing: 0.308vw;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.464vw;
+  text-transform: uppercase;
+}
+
+.kotakBidang {
+  display: flex;
+  align-items: center;
+  gap: 2.05vw;
+  padding-left: 0.878vw;
 }
