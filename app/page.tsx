@@ -12,6 +12,8 @@ export default function Home() {
   const isInViewAbout = useInView(aboutRef, { once: true });
   const isInViewSec = useInView(secRef, { once: true });
   const [isHoveredLebihLanjut, setHoveredLebihLanjut] = useState(false)
+  const [isClickedProg, setIsClickedProg] = useState(false);
+  const [isClickedCyb, setIsClickedCyb] = useState(false);
 
   useEffect(() => {
     console.log("Element is in view Home: ", isInViewHome);
@@ -25,6 +27,15 @@ export default function Home() {
     console.log("Element is in view About: ", isInViewSec);
   }, [isInViewSec]);
 
+  const handleClickProg = () => {
+    setIsClickedProg(prevState => !prevState);  // Toggle isClickedProg
+    setIsClickedCyb(false);  // Pastikan isClickedCyb menjadi false
+  };
+  
+  const handleClickCyb = () => {
+    setIsClickedCyb(prevState => !prevState);  // Toggle isClickedCyb
+    setIsClickedProg(false);  // Pastikan isClickedProg menjadi false
+  };
   
   return (
     <>
@@ -267,7 +278,12 @@ export default function Home() {
         Di Stemba Computer Club (SCC), siswa akan mempelajari empat bidang utama: Programming, Cyber Security, Networking, dan UI/UX (User Interface & User Experience)
       </p>
       <div className="buttonBidang">
-        <div className="bidangProgramming">
+        <motion.div 
+          className={`bidangScc ${isClickedProg ? "bidangSccCyber" : ""}`}
+          onClick={handleClickProg}
+          whileTap={{ scale: 0.99 }}
+          whileHover={{ scale: 1.01 }}
+        >
           <div className="kotakBidang">
             <div className="nomorBidang">
               <p className="isiNomorBidang">
@@ -278,8 +294,13 @@ export default function Home() {
               Programming
             </p>
           </div>
-        </div>
-        <div className="bidangProgramming">
+        </motion.div>
+        <motion.div 
+        className={`bidangScc ${isClickedCyb ? "bidangSccCyber" : ""}`}
+        onClick={handleClickCyb}
+        whileTap={{ scale: 0.99 }}
+        whileHover={{ scale: 1.01 }}
+        >
           <div className="kotakBidang">
             <div className="nomorBidang">
               <p className="isiNomorBidang">
@@ -290,8 +311,28 @@ export default function Home() {
               Cyber security
             </p>
           </div>
-        </div>
-        <div className="bidangProgramming">
+          <img src="/assets/panahPutih.png" alt="" className="panahAtas" />
+          <p className="deskripsiCyber">
+            Keamanan siber adalah praktik melindungi sistem, jaringan, dan program dari serangan digital
+          </p>
+          <motion.div
+            className="kategoriCyber"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.2 }}
+          >
+            <p className="malwareCyber">
+              Malware
+            </p>
+            <p className="phisingCyber">
+              Phising
+            </p>
+            <p className="ctfCyber">
+              CTF
+            </p>
+          </motion.div>
+        </motion.div>
+        <div className="bidangScc">
           <div className="kotakBidang">
             <div className="nomorBidang">
               <p className="isiNomorBidang">
@@ -303,7 +344,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="bidangProgramming">
+        <div className="bidangScc">
           <div className="kotakBidang">
             <div className="nomorBidang">
               <p className="isiNomorBidang">

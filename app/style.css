@@ -233,7 +233,7 @@ html {
   margin-left: 49.341vw;
   margin-top: 14.323vh;
   position: absolute;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.022vw;
   text-align: justify;
 }
 
@@ -254,7 +254,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .isiNomorBidang {
@@ -264,13 +263,18 @@ html {
   font-size: 1.464vw;
 }
 
-.bidangProgramming {
+.bidangScc {
   border: 0.073vw solid #C7C7C7;
   display: flex;
   align-items: center;
   width: 38.214vw;
   height: 8.203vh;
   border-radius: 0.878vw;
+  transition: transform 0.5s ease, background-color 0.8s ease, height 0.3s ease, width 0.8s ease-in-out;
+}
+
+.bidangScc:hover {
+  cursor: pointer;
 }
 
 .namaBidang {
@@ -286,4 +290,80 @@ html {
   align-items: center;
   gap: 2.05vw;
   padding-left: 0.878vw;
+}
+
+.panahAtas,.kategoriCyber,.deskripsiCyber {
+  display: none;
+}
+
+.bidangSccCyber {
+  width: 40.556vw;
+  margin-left: -0.952vw;
+  height: 24.349vh;
+  border: none;
+  background-color: #181A1E;
+  display: flex;
+  align-items: start;
+  height: 32.552vh;
+  transform-origin: top;
+  transition: transform 0.8s ease, background-color 1s ease, height 0.3s ease, width 0.5s ease;
+  .kategoriCyber {
+    display: flex;
+    width: 24.158vw;
+    height: 4.818vh;
+    gap: 1.757vw;
+    color: #C5C6C8;
+    position: absolute;
+    margin-top: 25.26vh;
+    margin-left: 2.489vw;
+  }
+  .malwareCyber,.phisingCyber,.ctfCyber{
+    height: 4.818vh;
+    text-align: center;
+    border-radius: 3.66vw;
+    background-color: #252B38;
+    padding-top: 0.8vh;
+  }
+  .malwareCyber {
+    width: 7.76vw;
+  }
+  .phisingCyber {
+    width: 7.321vw;
+  }
+  .ctfCyber {
+    width: 5.564vw;
+  }
+  .deskripsiCyber {
+    position: absolute;
+    width: 35.286vw;
+    height: 5.729vh;
+    color: #AAAAAA;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.171vw;
+    margin-top: 11.068vh;
+    margin-left: 2.416vw;
+    display: block;
+  }
+  .panahAtas {
+    width: 1.757vw;
+    position: absolute;
+    margin-left: 36.747vw;
+    margin-top: 4.684vh;
+    display: block;
+  }
+  .kotakBidang {
+    margin-top: 4.427vh;
+    padding-left: 2.489vw;
+  }
+  .namaBidang {
+    letter-spacing: normal;
+    color: #F5F5F5;
+    font-weight: 600;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.464vw;
+    text-transform: capitalize;
+  }
+  .nomorBidang {
+    display: none;
+  }
 }
